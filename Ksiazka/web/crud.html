@@ -57,10 +57,10 @@ and open the template in the editor.
             <div>
             <table class="table">
             <tbody>
-<!--            <tr><td>Id</td>
+            <tr><td><label style="display:none;">Id</label></td>
             <td>
-            <input type='text' id='id' name='id' value='<%= typeof(id)!== "undefined" ? id : "" %>'  />
-            </td>-->
+            <input type='text' id='id' style="display:none;" name='id' value='<%= typeof(id)!== "undefined" ? id : "" %>'  />
+            </td>
             </tr>
             <tr>
             <td><label>Tytuł</label></td><td><input class="form-control" type='text' id='tytul' name='tytul' value='<%= tytul %>'/></td></tr>
@@ -74,8 +74,12 @@ and open the template in the editor.
             Put your controls to create new entity here.
             Classes 'save' and 'delete' are used to listen on events in JS code.
             -->
-            <button  class='save'>Save</button>
-            <button  class='delete'>Delete</button>
+            <a class='save'>
+            <button  class="btn btn-info">Zapisz książkę do bazy</button>
+    </a>
+    <a class='delete'>
+            <button  class="btn btn-danger">Skasuj książkę z bazy</button>
+    </a>
             </div>
             </script>
 
