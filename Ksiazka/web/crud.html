@@ -32,7 +32,8 @@ and open the template in the editor.
 
             <!-- Templates -->
             <script type='text/template' id='tpl-create'>
-                <button class='new'>Create</button>
+                <a class='new'>
+                <button class="btn btn-primary" type="button">Wprowadź nową książkę</button></a>
             </script>
 
             <script type='text/template' id='thead'>
@@ -62,11 +63,11 @@ and open the template in the editor.
             </td>-->
             </tr>
             <tr>
-            <td><label>Tytuł<label></td><td><input type='text' id='tytul' name='tytul' value='<%= tytul %>'/></td></tr>
+            <td><label>Tytuł</label></td><td><input class="form-control" type='text' id='tytul' name='tytul' value='<%= tytul %>'/></td></tr>
             <tr>
-            <td><label>Autor</label></td><td><input type='text' id='autor' name='autor' value='<%= autor %>'/></td></tr>
+            <td><label>Autor</label></td><td><input class="form-control" type='text' id='autor' name='autor' value='<%= autor %>'/></td></tr>
             <tr>
-            <td><label>Opis</label></td><td><input type='text' id='opis' name='opis' value='<%= opis %>'/></td></tr>
+            <td><label>Opis</label></td><td><input  class="form-control" type='text' id='opis' name='opis' value='<%= opis %>'/></td></tr>
             </tbody>
             </table>
             <!--
