@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html>
+        <head>
+            <title></title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+            <script src="../../js/category/updateCategory.js"></script>
+        </head>
+<body>
+
+
+<div class="container">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="index.html">Książki</a>
+
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <a href="../../showBooks.html">
+                <button type="button" class="btn btn-default navbar-btn">Książki</button>
+            </a>
+            <a href="../../showCategories.html">
+                <button type="button" class="btn btn-default navbar-btn">Gatunki</button>
+            </a>
+        </div>
+    </nav>
+
+    <form action="/book/rest/category/updateCategory" method="post">
+        <input type="text" id="idCategory" name="idCategory" style="visibility: hidden;"/>
+        <table class="operationtable">
+            <tr >
+                <td colspan='2'>Edycja</td>
+            </tr>
+            <tr>
+                <td>ID:</td>
+                <td id="id"></td>
+            </tr>
+
+            <tr>
+                <td>Nazwa:</td>
+                <td><input type="categoryName" name="categoryName" id="categoryName"/></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input class="btn btn-danger" type="submit" value=" Zapisz " align="right"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

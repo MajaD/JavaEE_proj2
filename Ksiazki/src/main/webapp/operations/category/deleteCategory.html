@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html>
+        <head>
+            <title></title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+            <script src="../../js/category/deleteCategory.js"></script>
+        </head>
+<body>
+
+
+<div class="container">
+
+    <nav class="navbar navbar-default" role="navigation">
+       
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="index.html">Ksiązki</a>
+
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <a href="../../showBooks.html">
+                <button type="button" class="btn btn-default navbar-btn">Ksiązki</button>
+            </a>
+            <a href="../../showCategories.html">
+                <button type="button" class="btn btn-default navbar-btn">Gatunki</button>
+            </a>
+        </div>
+    </nav>
+
+    <form action="/book/rest/category/deleteCategory" method="post">
+        <input type="text" id="idCategoryID" name="idCategory" style="visibility: hidden;" />
+        <table class="table table-striped" id="presentationTable">
+            <tr>
+                <td><label>Id</label></td>
+                <td id="id"></td>
+            </tr>
+            <td><label>Gatunek</label></td>
+            <td id="categoryName"></td>
+
+            <tr>
+                <button type="submit" class="btn btn-danger">Usuń</button>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
