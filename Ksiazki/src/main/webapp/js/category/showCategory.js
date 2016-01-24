@@ -22,21 +22,21 @@ $(document).ready(function()
             var cellReadLink = document.createElement("a");
 
             cellReadLink.href = "../../book/operations/category/readCategory.html?id=" + data[i].idCategory;
-            cellReadLink.textContent = "Read";
+            cellReadLink.textContent = "Wyświetl";
             cellRead.appendChild(cellReadLink);
 
             var cellUpdate = document.createElement("td");
             var cellUpdateLink = document.createElement("a");
 
             cellUpdateLink.href = "../../book/operations/category/updateCategory.html?id=" + data[i].idCategory;
-            cellUpdateLink.textContent = "Update";
+            cellUpdateLink.textContent = "Aktualizuj";
             cellUpdate.appendChild(cellUpdateLink);
 
             var cellDelete = document.createElement("td");
             var cellDeleteLink = document.createElement("a");
 
             cellDeleteLink.href = "../../book/operations/category/deleteCategory.html?id=" + data[i].idCategory;
-            cellDeleteLink.textContent = "Delete";
+            cellDeleteLink.textContent = "Usuń";
             cellDelete.appendChild(cellDeleteLink);
 
             row.appendChild(cellId);

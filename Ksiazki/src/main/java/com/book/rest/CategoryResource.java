@@ -8,6 +8,7 @@ import javax.ejb.Stateless;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.net.URI;
 import java.util.List;
 
 @Stateless
@@ -27,7 +28,10 @@ public class CategoryResource {
 
         categoryManager.addCategory(category);
 
-        return Response.status(Response.Status.CREATED).build();
+        URI reDirect = URI.create("../../book/showCategories.html");
+
+        return Response.temporaryRedirect(reDirect).build();
+       // return Response.status(Response.Status.CREATED).build();
     }
 
     @POST
@@ -42,7 +46,11 @@ public class CategoryResource {
 
         categoryManager.updateCategory(category);
 
-        return Response.status(Response.Status.OK).build();
+
+        URI reDirect = URI.create("../../book/showCategories.html");
+
+        return Response.temporaryRedirect(reDirect).build();
+        //return Response.status(Response.Status.OK).build();
     }
 
     @POST
@@ -53,7 +61,11 @@ public class CategoryResource {
         category.setIdCategory(idCategory);
 
         categoryManager.deleteCategory(category);
-        return Response.status(Response.Status.OK).build();
+
+        URI reDirect = URI.create("../../book/showCategories.html");
+
+        return Response.temporaryRedirect(reDirect).build();
+       // return Response.status(Response.Status.OK).build();
     }
 
     @GET

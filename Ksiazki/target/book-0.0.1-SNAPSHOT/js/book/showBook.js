@@ -29,21 +29,21 @@ $(document).ready(function()
             var cellReadLink = document.createElement("a");
 
             cellReadLink.href = "../../book/operations/book/readBook.html?id=" + data[i].idBook;
-            cellReadLink.textContent = "Read";
+            cellReadLink.textContent = "Wyświetl";
             cellRead.appendChild(cellReadLink);
 
             var cellUpdate = document.createElement("td");
             var cellUpdateLink = document.createElement("a");
 
             cellUpdateLink.href = "../../book/operations/book/updateBook.html?id=" + data[i].idBook;
-            cellUpdateLink.textContent = "Update";
+            cellUpdateLink.textContent = "Aktualizuj";
             cellUpdate.appendChild(cellUpdateLink);
 
             var cellDelete = document.createElement("td");
             var cellDeleteLink = document.createElement("a");
 
             cellDeleteLink.href = "../../book/operations/book/deleteBook.html?id=" + data[i].idBook;
-            cellDeleteLink.textContent = "Delete";
+            cellDeleteLink.textContent = "Usuń";
             cellDelete.appendChild(cellDeleteLink);
 
             row.appendChild(cellId);

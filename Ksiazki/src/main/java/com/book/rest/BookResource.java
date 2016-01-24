@@ -10,6 +10,7 @@ import javax.ejb.Stateless;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.net.URI;
 import java.util.List;
 
 
@@ -37,7 +38,11 @@ public class BookResource {
         book.setBookDesc(bookDesc);
 
         bookManger.addBook(book);
-        return Response.status(Response.Status.CREATED).build();
+
+        URI reDirect = URI.create("../../book/showBooks.html");
+
+        return Response.temporaryRedirect(reDirect).build();
+        //return Response.status(Response.Status.CREATED).build();
     }
 
     @POST
@@ -58,7 +63,11 @@ public class BookResource {
         book.setBookDesc(bookDesc);
 
         bookManger.updateBook(book);
-        return Response.status(Response.Status.OK).build();
+
+        URI reDirect = URI.create("../../book/showBooks.html");
+
+        return Response.temporaryRedirect(reDirect).build();
+        //return Response.status(Response.Status.OK).build();
     }
 
     @POST
@@ -70,7 +79,11 @@ public class BookResource {
 
         bookManger.deleteBook(book);
 
-        return Response.status(Response.Status.OK).build();
+        URI reDirect = URI.create("../../book/showBooks.html");
+
+        return Response.temporaryRedirect(reDirect).build();
+
+        //return Response.status(Response.Status.OK).build();
     }
 
 
